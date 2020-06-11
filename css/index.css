@@ -1,0 +1,2244 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: black ;   
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(177, 6, 6, 0.5) ;
+}
+
+
+/* INICIO DO HEADER */
+.header{
+    height: 86px;
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(1px);
+    background-color: rgba(177, 6, 6, 0.5);
+    margin-top: -86px;
+    z-index: 1;
+    
+}
+.header .container-header{
+    height: 96%;
+    width: 85%;
+    margin: auto;
+    border-bottom: 3px solid black;
+    border-radius: 30px
+}
+.header .container-header img{
+    float: left;
+    height: 79px;
+    width: 90px;
+    margin-top: 2px;
+}
+.header .container-header ul{
+    list-style:none;
+    float: right;
+    font-size:25px;
+    margin-top: 30px;
+    
+}
+.header .container-header ul li{
+    display: inline-block;
+    margin-left: 13px;
+}
+.header .container-header ul li .active{
+    color: white;
+}
+.header .container-header ul li a{
+    text-decoration: none;
+    color: black;
+}
+body{
+    font-family: sans-serif;
+    background-color: rgb(0, 0, 0)
+}
+/* FINAL DO HEADER */
+
+/* inicio da parte inicial do site */
+
+.pai-inicio{
+    margin-top: 86px;
+    height: 87vh;
+    width: 100%;
+    background-image: url(../img/newindex/fundInicial.jpg);
+    background-size: 100%;
+    background-position: center;
+    text-align: center;
+    overflow: hidden;
+}
+
+.pai-inicio .blur-inicio{
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.632);
+}
+
+.pai-inicio .blur-inicio .inicio-primario{
+    color: white;
+    font-size: 100px;
+    font-weight: 800;
+    padding-top: 44px;
+    /* animation: titulodesc 1.5s linear 1; */
+    border-bottom: 7px solid white;
+}
+
+@keyframes titulodesc{
+    0%{
+        padding-top: 0px;
+        opacity: 0;
+    }
+    100%{
+        padding-top: 44px;
+        opacity: 1;
+    }
+}
+
+.pai-inicio .blur-inicio .inicio-secundario{
+    font-size: 100px;
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+    border-bottom: 0px;
+    word-spacing: 5px;
+    /* animation: titulosecundario 1.5s linear 1; */
+}
+
+@keyframes titulosecundario{
+    0%{
+        padding-top: 0px;
+        opacity: 0;
+    }
+    100%{
+        padding-top: 10px;
+        opacity: 1;
+    }
+}
+
+.pai-inicio .blur-inicio a{
+    text-decoration: none;
+    color: white
+}
+.pai-inicio .blur-inicio a:hover{
+    border-bottom: 2px solid white;
+}
+/* final da  parte inicial do site */
+
+/* inicio da parte de desenvolvimento */
+
+.pai-desenvolvimento{
+    height: 100vh;
+    width: 100%;
+    background: rgb(89, 3, 3);
+    background-image: url(../img/newindex/desenvolvimento/funddesenvolvimento.png);
+    background-position: center;
+    background-size: 100%;
+    border-top: 2px solid rgb(89, 3, 3);
+    border-bottom: 2px solid rgb(89, 3, 3);
+}
+
+.pai-desenvolvimento .container-desenvolvimento{
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.795);
+    overflow: hidden;
+}
+
+.imgdes1 {
+    height: 100px;
+    margin-top: -1120px;
+    position: absolute;
+    /* animation: img1 4s ease-in-out 1; */
+    opacity: 0;
+}
+
+@keyframes img1{
+    0%{
+        margin-top: 120px;
+        margin-left: 0px;
+        opacity: 0;
+    }
+    15%{
+        margin-left: 900px;
+        margin-top: 120px;
+        opacity: 1;
+    }
+    30%{
+        margin-top: 490px;
+        margin-left: 900px;
+        opacity: 1;
+    }
+    45%{
+        margin-top: 490px;
+        margin-left: 150px;
+        opacity: 1;
+    }
+    60%{
+        margin-top: 190px;
+        margin-left: 150px;
+        opacity: 1;
+    }
+    75%{
+        margin-top: 190px;
+        margin-left: 458px;
+        opacity: 0.75;
+    }
+    100%{
+        margin-top: 121px;
+        margin-left: 458px;
+        opacity: 0;
+    }
+}
+
+.imgdes2 {
+    height: 100px;
+    margin-left: 650px;
+    margin-top: -4590px;
+    position: absolute;
+    /* animation: img2 4s ease-in-out 1; */
+    opacity: 0;
+}
+
+@keyframes img2{
+    0%{
+        margin-top: 490px;
+        margin-left: 1200px;
+        opacity: 0
+    }
+    15%{
+        margin-top: 490px;
+        margin-left: 150px;
+        opacity: 1;
+    }
+    30%{
+        margin-left: 150px;
+        margin-top: 190px;
+        opacity: 1;
+    }
+    45%{
+        margin-top: 190px;
+        margin-left: 950px;
+        opacity: 1;
+    }
+    60%{
+        margin-left: 950px;
+        margin-top: 490px;
+        opacity: 1;
+    }
+    75%{
+        margin-top: 490px;
+        margin-left: 530px;
+        opacity: 0.75;
+    }
+    100%{
+        margin-left: 530px;
+        margin-top: 250px;
+        opacity: 0
+    }
+}
+
+.desenvolvimento-aparecer{
+    /* animation: img3 5s linear 1; */
+    height: 400px;
+    border-radius: 11px;
+    width: 288px;
+    margin-left: 144px;
+    margin-top: 171px;
+    position: absolute;
+    background-image: url(../img/newindex/desenvolvimento/cartacerebro.png);
+    background-size: 100%;
+    box-shadow: 0px 0px 10px 4px white
+}
+
+@keyframes img3{
+    0%{
+        opacity: 0;
+        height: 0px;
+        margin-left: 470px;
+        box-shadow: 0px 0px 0px 0px white
+    }
+    70%{
+        opacity: 0;
+        height: 0px;
+        margin-left: 470px;
+        box-shadow: 0px 0px 0px 0px white
+    }
+    80%{
+        opacity: 1;
+        height: 300px;
+        margin-left: 470px;
+    }
+    100%{
+        margin-left: 144px;
+        transition: ease-in-out 1s;
+        box-shadow: 0px 0px 10px 4px white
+    }
+}
+
+.titulo-des{
+    color: white;
+    border-bottom: 2px solid;
+    margin-left: 0px;
+    font-size: 45px;
+    font-weight: 700;
+    width: 794px;
+}
+
+.textos-desenvolvimento{
+    overflow: hidden;
+    width: 59%;
+    height: 400px;
+    position: absolute;
+    margin-top: 172px;
+    margin-left: 451px;
+    /* animation: ativar 5.5s linear 1; */
+    background-position: right;
+}
+
+@keyframes ativar{
+    0%{
+        width: 0%;
+        margin-left: 160px;
+        opacity: 0;
+    }
+    80%{
+        width: 0%;
+        margin-left: 160px;
+    }
+    100%{
+        width: 59%;
+        margin-left: 451px;
+    }
+}
+
+.descrição-des{
+    font-size: 26px;
+    color: white;
+    width: 790px;
+}
+.descrição-des .text-desconf{
+    height: 50px;
+    width: 190px;
+    background-color: black;
+    border-radius: 12px;
+    margin-left: 30%;
+    font-size: 18px;
+    color: white;
+    font-weight: 600;
+    box-shadow: 0px 0px 5px 3px white;
+    outline: none;
+    cursor: pointer;
+}
+.text-desconf:hover{
+    background-color: grey;
+    color: white;
+    box-shadow: 0px 0px 5px 3px white;
+    transition: 0.5s
+}
+
+.explicação-desenvolvimento{
+    position: absolute;
+    width: 0%;
+    height: 400px;
+    margin-top: 171px;
+    margin-left: 89px;
+    overflow: scroll;
+}
+
+.backdes{
+    color: white;
+    margin-left: 1170px;
+    font-size: 35px;
+    margin-top: 126px;
+    background: none;
+    opacity: 0;
+    position: absolute;
+}
+/* final da parte de desenvolvimento */
+
+/* inicio da parte sobre história do baralho */
+
+.pai-historia{
+    height: 100vh;
+    width: 100%;
+    background: #e5dfac;
+    background-image: url(../img/newindex/historia/fundhistoria.png);
+    background-position: center;
+    background-size: 100%;
+    border-bottom: 2px solid rgb(89, 3, 3);
+}
+
+.blur-história{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(7, 7, 6, 0.753);
+    overflow: hidden;
+}
+
+.container-historia{
+    width: 86%;
+    height: 100%;
+    margin-left: 7%;
+    position: absolute;
+    overflow: hidden;
+}
+.começo-historia{
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    position: absolute;
+}
+
+.começo-historia .imghis1 {
+    height: 447px;
+    margin-top: 961px;
+    width: 309px;
+    margin-left: 45px;
+    position: absolute;
+}
+
+.começo-historia .titulohisbara{
+    position: absolute;
+    color: white;
+    font-size: 45px;
+    font-weight: 700;
+    width: 794px;
+    border-bottom: 2px solid;
+    margin-left: 350px;
+    margin-top: -550px;
+}
+
+.explicahisbara{
+    position: absolute;
+    width: 760px;
+    color: white;
+    font-size: 26px;
+    margin-left: 353px;
+    margin-top: -550px;
+}
+
+.btnsabermaishis{
+    position: absolute;
+    height: 49px;
+    background-color: black;
+    margin-top: -550px;
+    width: 184px;
+    margin-left: 625px;
+    color: white;
+    font-size: 20px;
+    border-radius: 11px;
+    box-shadow: 0px 0px 5px 3px white;
+    outline: none;
+    cursor: pointer;
+}
+
+.btnsabermaishis:hover{
+    background-color: grey;
+    color: white;
+    box-shadow: 0px 0px 5px 3px white;
+    transition: 0.5s
+}
+
+
+.historia1{
+    position: absolute;
+    color: white;
+    width: 1044px;
+    font-size: 26px;
+    margin-top: 145px;
+    margin-left: 1500px;
+    overflow: hidden;
+    height: 71%;
+}
+
+
+.historia1 p{
+    width: 1044px;
+}
+.historia1 .ph1{
+    margin-top: 0px;
+}
+.historia1 .ph1 img{
+    height: 200px;
+    margin-left: 360px;
+}
+
+
+.btnhistoria1{
+    background-image: url(../img/newindex/historia/arrow.png);
+    background-size: 100%;
+    background-position: center;
+    border-radius: 18%;
+    height: 72px;
+    width: 76px;
+    margin-top: 263px;
+    margin-left: 3070px;
+    position: absolute;
+    outline: none;
+    cursor: pointer;
+    box-shadow: 0px 0px 16px 13px black;
+}
+.btnhistoria1:active{
+    margin-top: 257px;
+}
+
+.btndescerhistoria1{
+    background-image: url(../img/newindex/historia/arrow.png);
+    background-size: 100%;
+    transform: rotate(180deg);
+    background-position: center;
+    border-radius: 18%;
+    height: 72px;
+    width: 76px;
+    margin-top: 432px;
+    margin-left: 3070px;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    box-shadow: 0px 0px 16px 13px black;
+}
+.btndescerhistoria1:active{
+    margin-top: 437px;
+}
+
+.endhis{
+    position: absolute;
+    margin-left: 1115px;
+    font-size: 36px;
+    color: white;
+    margin-top: -125px;
+    transition: 1s;
+    cursor: pointer;
+}
+/* final da parte da história do baralho */
+
+/* inicio da parte de teoria */
+
+.pai-teoria{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/newindex/teorias/fundteoria.png);
+    background-size: 100%;
+    background-position: center;
+}
+
+.btn-prox-teoria{
+    float: right;
+    margin-top: 31%;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    margin-right: 2%;
+    box-shadow: 0px 0px 5px 10px rgba(177, 6, 6, 0.5);
+}
+
+.btn-ant-teoria{
+    float: left;
+    margin-top: 31%;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 2%;
+    transform: rotate(180deg);
+    box-shadow: 0px 0px 5px 10px rgba(177, 6, 6, 0.5);
+}
+.btn-ant-teoria:active, .btn-prox-teoria:active{
+    margin-top: 31.5%;
+}
+    
+    .fecharteorias{
+        height: 100px;
+        width: 100px;
+        color: white;
+        position: absolute;
+        margin-top: -534px;
+        margin-left: 519px;
+        font-size: 42px;
+        opacity: 0;
+        transition: all 1s;
+    }
+    .fecharteorias:hover{
+        cursor: pointer;
+    }
+
+    .fecharteoriasrei{
+        margin-left: 362px;
+    }
+
+    .fecharteoriasvalete{
+        margin-top: -530px;
+        margin-left: 369px;
+    }
+
+
+.blur-paiteoria{
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.632);
+}
+
+.container-teoria{
+    position: absolute;
+    width: 86%;
+    height: 84vh;
+    margin-left: 7%;
+    margin-top: 86px;
+    overflow: hidden;
+}
+
+
+.teoria1{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    color: white
+}
+
+.titulo-teoria{
+    width: 1171px;
+}
+
+.teoria1 p{
+    margin-top: 25px;
+}
+
+.blur-teoria1{
+    width: 100%;
+    height: 100%;
+}
+
+.titulo-teoria{
+    font-size: 32px;
+    color: white;
+}
+
+.rainhasteoria1{
+    height: 400px;
+    width: 300px;
+    margin-top: 14px;
+    margin-left: 9%;
+    position: absolute;
+    transition: all 1s;
+}
+.rainhasteoria1:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 29px 6px rgba(177, 6, 6, 0.5);
+}
+
+.rainhasteoria1 .img1rainha1{
+    height: 402px;
+    position: absolute;
+    margin-left: -152px;
+    width: 304px;
+    transition: all 1s;
+}
+
+.hoverimg1rai1{
+    position: absolute;
+    width: 240px;
+    background-color: rgba(0,0,0,0.68);
+    backdrop-filter: blur(2px);
+    height: 0px;
+    margin-left: -82px;
+    margin-top: -30px;
+    overflow: hidden;
+    transition: height 1s;
+}
+.img1rainha11{
+    margin-top : -30px;
+    margin-left : -232px;
+    box-shadow : 0px 0px 18px 20px black;
+    height : 305px;
+    width : 240px;
+    transition: all 2s;
+    position: absolute;
+}
+
+
+.rainhasteoria1 .img2rainha1{
+    height: 402px;
+    position: absolute;
+    margin-left: -152px;
+    width: 304px;
+    transition: all 1s;
+}
+
+.hoverimg2rai1{
+    position: absolute;
+    width: 240px;
+    background-color: rgba(0,0,0,0.68);
+    backdrop-filter: blur(2px);
+    height: 0px;
+    margin-left: 215px;
+    margin-top: -30px;
+    overflow: hidden;
+    transition: height 1s;
+}
+.img2rainha11{
+    margin-top : -30px;
+    margin-left : 65px;
+    box-shadow : 0px 0px 18px 20px black;
+    height : 305px;
+    width : 240px;
+    transition: all 2s;
+    position: absolute;
+}
+
+.rainhasteoria1 .img3rainha1{
+    height: 402px;
+    position: absolute;
+    margin-left: -152px;
+    width: 304px;
+    transition: all 1s;
+}
+.img3rainha11{
+    margin-top : -30px;
+    margin-left : 359px;
+    box-shadow : 0px 0px 18px 20px black;
+    height : 305px;
+    width : 240px;
+    transition: all 2s;
+    position: absolute;
+}
+.hoverimg3rai1{
+    position: absolute;
+    width: 240px;
+    background-color: rgba(0,0,0,0.68);
+    backdrop-filter: blur(2px);
+    height: 0px;
+    margin-left: 509px;
+    margin-top: -30px;
+    overflow: hidden;
+    transition: height 1s;
+
+}
+
+
+.rainhasteoria1 .img4rainha1{
+    height: 402px;
+    position: absolute;
+    margin-left: -152px;
+    width: 304px;
+    transition: all 1s;
+    cursor: pointer;;
+}
+.hoverimg4rai1{
+    position: absolute;
+    width: 240px;
+    background-color: rgba(0,0,0,0.68);
+    backdrop-filter: blur(2px);
+    height: 0px;
+    margin-left: 802px;
+    margin-top: -30px;
+    overflow: hidden;
+    transition: height 1s;
+}
+
+.img4rainha11{
+    margin-top : -30px;
+    margin-left : 652px;
+    box-shadow : 0px 0px 18px 20px black;
+    height : 305px;
+    width : 240px;
+    transition: all 1s ease-in-out;
+    position: absolute;
+}
+
+.rainhasteoria11{
+    overflow: hidden;
+    height: 400px;
+    width: 300px;
+    margin-top: 200%;
+    float: left;
+    opacity: 0;
+    transition: all 0.5s linear;
+}
+.reiteoria1{ 
+    height: 400px;
+    width: 300px;
+    margin-top: 14px;
+    margin-left: 442px;
+    position: absolute;
+    transition: all 1s;
+}
+.reiteoria11{ 
+    height: 400px;
+    width: 300px;
+    opacity: 0;
+    width: 0%;
+    margin-top: 200%;
+    transition: all 0.5s linear;
+    overflow: hidden;
+    position: absolute;
+}
+
+.reiteoria1:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 29px 6px rgba(177, 6, 6, 0.5);
+}
+
+.img1rei1{
+    height: 402px;
+    position: absolute;
+    margin-left: -152px;
+    width: 304px;
+    transition: all 1s;
+}
+
+.hoverimg1rei1{
+    position: absolute;
+    width: 240px;
+    background-color: rgba(0,0,0,0.68);
+    backdrop-filter: blur(2px);
+    height: 0px;
+    margin-left: -417px;
+    margin-top: -30px;
+    overflow: hidden;
+    transition: height 1s;
+}
+.img1REI11{
+    margin-top : -30px;
+    margin-left: -567px;
+    box-shadow : 0px 0px 18px 20px black;
+    height : 305px;
+    width : 240px;
+    transition: all 2s;
+    position: absolute;
+}
+
+
+.img2rei1{
+    height: 402px;
+    position: absolute;
+    margin-left: -152px;
+    width: 304px;
+    transition: all 1s;
+}
+
+.hoverimg2rei1{
+    position: absolute;
+    width: 240px;
+    background-color: rgba(0,0,0,0.68);
+    backdrop-filter: blur(2px);
+    height: 0px;
+    margin-left: -122px;
+    margin-top: -30px;
+    overflow: hidden;
+    transition: height 1s;
+}
+.img2REI11{
+    margin-top : -30px;
+    margin-left: -272px;
+    box-shadow : 0px 0px 18px 20px black;
+    height : 305px;
+    width : 240px;
+    transition: all 2s;
+    position: absolute;
+}
+
+.img3rei1{
+    height: 402px;
+    position: absolute;
+    margin-left: -152px;
+    width: 304px;
+    transition: all 1s;
+}
+.img3REI11{
+    margin-top : -30px;
+    margin-left : 20px;
+    box-shadow : 0px 0px 18px 20px black;
+    height : 305px;
+    width : 240px;
+    transition: all 2s;
+    position: absolute;
+}
+.hoverimg3rei1{
+    position: absolute;
+    width: 240px;
+    background-color: rgba(0,0,0,0.68);
+    backdrop-filter: blur(2px);
+    height: 0px;
+    margin-left: 170px;
+    margin-top: -30px;
+    overflow: hidden;
+    transition: height 1s;
+}
+
+
+.img4rei1{
+    height: 402px;
+    position: absolute;
+    margin-left: -152px;
+    width: 304px;
+    transition: all 1s;
+}
+.hoverimg4rei1{
+    position: absolute;
+    width: 240px;
+    background-color: rgba(0,0,0,0.68);
+    backdrop-filter: blur(2px);
+    height: 0px;
+    margin-left: 459px;
+    margin-top: -30px;
+    overflow: hidden;
+    transition: height 1s;
+}
+
+.img4REI11{
+    margin-top : -30px;
+    margin-left : 309px;
+    box-shadow : 0px 0px 18px 20px black;
+    height : 305px;
+    width : 240px;
+    transition: all 1s ease-in-out;
+    position: absolute;
+}
+
+
+.img1valete1{
+    height: 402px;
+    position: absolute;
+    margin-left: -152px;
+    width: 304px;
+    transition: all 1s;
+}
+
+.hoverimg1valete1{
+    position: absolute;
+    width: 240px;
+    background-color: rgba(0,0,0,0.68);
+    backdrop-filter: blur(2px);
+    height: 0px;
+    margin-left: -747px;
+    margin-top: -30px;
+    overflow: hidden;
+    transition: height 1s;
+}
+.img1valete11{
+    margin-top : -30px;
+    margin-left: -897px;
+    box-shadow : 0px 0px 18px 20px black;
+    height : 305px;
+    width : 240px;
+    transition: all 2s;
+    position: absolute;
+}
+
+
+.img2valete1{
+    height: 402px;
+    position: absolute;
+    margin-left: -152px;
+    width: 304px;
+    transition: all 1s;
+}
+
+.hoverimg2valete1{
+    position: absolute;
+    width: 240px;
+    background-color: rgba(0,0,0,0.68);
+    backdrop-filter: blur(2px);
+    height: 0px;
+    margin-left: -454px;
+    margin-top: -30px;
+    overflow: hidden;
+    transition: height 1s;
+}
+.img2valete11{
+    margin-top : -30px;
+    margin-left: -604px;
+    box-shadow : 0px 0px 18px 20px black;
+    height : 305px;
+    width : 240px;
+    transition: all 2s;
+    position: absolute;
+}
+
+.img3valete1{
+    height: 402px;
+    position: absolute;
+    margin-left: -152px;
+    width: 304px;
+    transition: all 1s;
+}
+.img3valete11{
+    margin-top : -30px;
+    margin-left : -312px;
+    box-shadow : 0px 0px 18px 20px black;
+    height : 305px;
+    width : 240px;
+    transition: all 2s;
+    position: absolute;
+}
+.hoverimg3valete1{
+    position: absolute;
+    width: 240px;
+    background-color: rgba(0,0,0,0.68);
+    backdrop-filter: blur(2px);
+    height: 0px;
+    margin-left: -162px;
+    margin-top: -30px;
+    overflow: hidden;
+    transition: height 1s;
+}
+
+
+.img4valete1{
+    height: 402px;
+    position: absolute;
+    margin-left: -152px;
+    width: 304px;
+    transition: all 1s;
+}
+.hoverimg4valete1{
+    position: absolute;
+    width: 240px;
+    background-color: rgba(0,0,0,0.68);
+    backdrop-filter: blur(2px);
+    height: 0px;
+    margin-left: 129px;
+    margin-top: -30px;
+    overflow: hidden;
+    transition: height 1s;
+}
+
+.img4valete11{
+    margin-top : -30px;
+    margin-left : -21px;
+    box-shadow : 0px 0px 18px 20px black;
+    height : 305px;
+    width : 240px;
+    transition: all 1s ease-in-out;
+    position: absolute;
+}
+
+.valeteteoria1{
+    height: 400px;
+    width: 300px;
+    margin-top: 14px;
+    margin-left: 778px;
+    position: absolute;
+    transition: all 1s;
+}
+.valeteclick{
+    height: 400px;
+    width: 300px;
+    margin-top: -2718px;
+    margin-left: 447px;
+    /* position: absolute; */
+    transition: all 1s;
+}
+.valeteteoria1:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 29px 6px rgba(177, 6, 6, 0.5);
+}
+
+.valeteteoria11{
+    height: 400px;
+    width: 300px;
+    opacity: 0;
+    width: 0%;
+    margin-top: 200%;
+    transition: all 0.5s linear;
+    overflow: hidden;
+}
+
+/* final da teoria 1 */
+
+
+/* inicio teoria 2 */
+
+.teoria2{
+    height: 100%;
+    width: 0%;
+    position: absolute;
+    text-align: center;
+    overflow: hidden;
+    color: white;
+    background-color: none;
+    margin-left: 1500px
+}
+
+.teoria2-text{
+    text-align: justify;
+    font-size: 26px;
+    width: 542px;
+    margin-top: 22px;
+    margin-left: 3%;
+    float: left;
+}
+.teoria2-text2{
+    text-align: justify;
+    font-size: 26px;
+    width: 542px;
+    margin-top: 22px;
+    margin-left: 55%;
+    position: absolute;
+}
+
+/* final teoria 2 */
+
+/* final da parte de teoria */
+
+
+/* inicio das  amostras de cada jogo*/
+
+/* inicio das amostras de truco */
+
+.pai-amostra-truco{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    border-top: 2px solid rgba(177, 6, 6, 0.5);
+    border-bottom: 2px solid rgba(177, 6, 6, 0.5);
+}
+
+.menuLateralTruco{
+    height: 71vh;
+    width: 16%;
+    background-image: url(../img/newindex/trucoIndex/fundoMEnu.png);
+    color: white;
+    border-right: 2px solid rgba(177, 6, 6, 0.5);
+    margin-top: 88px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 2px solid rgba(177, 6, 6, 0.5);
+    border-bottom: 2px solid rgba(177, 6, 6, 0.5);
+}
+
+.menuLateralTruco ul:hover{
+    cursor: pointer;
+    border-bottom: 1px solid;
+    color: rgba(177, 6, 6, 0.5);
+}
+
+.menuLateralTruco h1{
+    margin-left: 7%;
+    font-size: 63px;
+}
+
+.menuLateralTruco li{
+    list-style: none;
+    margin-top: 20px;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+.menuLateralTruco li ul{
+    margin-top: 12px;
+}
+
+
+.explicaçõesTruco{
+    height: 100vh;
+    width: 87%;
+    background-image: url(../img/newindex/trucoIndex/TRUCO.png);
+    background-size: 100%;
+    background-position: center;
+    overflow: hidden;
+    display: block;
+}
+
+/* historia truco */
+
+.historiaTruco{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/newindex/trucoIndex/historia/inglaterra.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    transition: background-image 1s;
+    margin-left: 1500px;
+    transition: margin-left 1.5s ease;
+
+}
+.historiaTruco1{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/newindex/trucoIndex/historia/frança.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    transition: background-image 1s;
+    transition: margin-left 1s ease;
+}
+.historiaTruco2{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/newindex/trucoIndex/historia/brasil.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    transition: background-image 1s;
+    transition: margin-left 1s ease;
+}
+
+.explicaHistoria{
+    overflow: scroll;
+    height: 444px;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.732);
+    margin: auto;
+    border-radius: 10px;
+}
+
+.explicaHistoria::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+.explicaHistoria .tituloHT1{
+    color: white;
+    font-size: 63px;
+    margin-bottom: 15px;
+    margin: 0 39%;
+}
+
+.explicaHistoria a{
+    text-decoration: none;
+    color: white;
+}
+.explicaHistoria a:hover{
+    color: red;
+}
+
+.explicaHistoria .textoHT{
+    color: white;
+    font-size: 26px;
+    text-align: justify;
+    margin: 10px 45px 0px 45px;
+}
+
+.imagem1Truco{
+    height: 250px;
+    margin: 7px 18% 7px 18%;
+    border-radius: 10px;
+}
+
+.tituloHT2{
+    color: white;
+    font-size: 63px;
+    margin-bottom: 15px;
+    margin: 0 12%;
+    width: 787px;
+}
+
+.tituloHT3{
+    color: white;
+    font-size: 63px;
+    margin-bottom: 15px;
+    margin: 0 28%;
+    width: 787px;
+}
+/* final historia truco */
+
+/* inicio torneios do truco */
+
+.torneiosTruco{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/newindex/trucoIndex/Torneios/Torneio.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-top: -653px;
+    /* transition: background-image 1s; */
+    margin-left: 1500px;
+    transition: margin-left 1.5s ease;
+}
+
+.blur-torneio{
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.blur-torneio img{
+    float: left;
+    height: 100px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.blur-torneio h1{
+    font-size: 63px;
+    color: white;
+    margin-top: 86px;
+    margin-left: 38%;
+    margin-bottom: 16px;
+}
+
+.blur-torneio p{
+    color: white;
+    font-size: 26px;
+    margin-left: 12%;
+    margin-right: 12%;
+    text-align: justify;
+}
+.blur-torneio a{
+    text-decoration: none;
+    color: white;
+}
+.blur-torneio a:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.torneio{
+    height: 100px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    float: left;
+    margin: 0px 36px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px white;
+    margin-top: 13px;
+}
+
+.torneio p{
+    width: 301px;
+    margin-left: 181px;
+}
+
+.torneio .p2{
+    width: 301px;
+    margin-left: 131px;
+}
+
+.torneio .p3{
+    width: 301px;
+    margin-left: 111px;
+}
+
+
+.torneio:nth-child(1){
+    float: right;
+}
+.torneio:nth-child(2){
+    float: right;
+}
+
+
+/* final dos torneios do truco */
+
+/* inicio dos torneios beneficentes */
+
+.torneiosBeneficentesTruco{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/newindex/trucoIndex/Torneios/beneficenteFund.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-top: -656px;
+    /* transition: background-image 1s; */
+    margin-left: 1500px;
+    transition: margin-left 1.5s ease;
+}
+
+.textoTB{
+    height: 100vh;
+    width: 50%;
+    float: left;
+}
+
+.torneiosBF{
+    height: 100vh;
+    width: 50%;
+    padding-top: 120px;
+}
+
+.torneioBF1{
+    height: 100px;
+    width: 500px;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin: 0px 36px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 5px black;
+    margin-top: 30px;
+}
+
+.torneioBF1 img{
+    float: left;
+    height: 100px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-right: 10px;
+}
+
+.torneioBF1 p{
+    color: white;
+    font-size: 26px;
+    margin-left: 61px;
+    width: 438px;
+}
+
+.torneioBF1 a{
+    text-decoration: none;
+    color: white;
+}
+.torneioBF1 a:hover{
+    color: red;
+}
+
+.textoTB h1{
+    font-size: 41px;
+    color: white;
+    margin-top: 90px;
+    margin-left: 11%;
+    margin-bottom: 10px;
+}
+    
+.textoTB p{
+    color: white;
+    font-size: 26px;
+    margin-left: 12%;
+    margin-right: 0%;
+    text-align: justify;
+}
+
+
+/* final dos torneios beneficentes */
+
+/* inicio dos grandes Jogadores de Truco */
+
+.principaisJogadores{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/newindex/trucoIndex/grandesjogadores/jogadoresFund.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-top: -660px;
+    /* transition: background-image 1s; */
+    margin-left: 1500px;
+    transition: margin-left 1.5s ease; 
+}
+
+.jogadoresT{
+    height: 500px;
+    width: 476px;
+    margin: auto 0px;
+    color: white;
+    margin-top: 100px;
+    backdrop-filter: blur(5px);
+    border: 2px solid;
+    border-radius: 10px;
+    box-shadow: 0px 0px 11px 2px white;
+    padding: 12px;
+}
+
+.jogadoresT h1{
+    font-size: 35px;
+    margin-bottom: 13px;
+}
+
+.jogadoresT p{
+    font-size: 26px;
+    text-align: justify;
+}
+
+.J1T{
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 180px;
+    overflow: hidden;
+    width: 181px;
+    background-image: linear-gradient(180deg, white, red);
+    transition: all 1s;
+    margin-top: 18%;
+    margin-left: 10%;
+    margin-right: 10px;
+}
+
+.J1T:hover{
+    height: 240px;
+    transition: all 1s;
+}
+
+.J1T img{
+    height: 171px;
+    margin: auto 5px;
+    border-radius: 10px;
+}
+
+.J1T p{
+    color: white;
+    margin-left: 13px;
+    margin-top: 20px;
+    font-size: 19px;
+}
+
+.J1T p a{
+    text-decoration: none;
+    color: white;
+}
+
+.J1T p a:hover{
+    color:black;
+}
+
+.J2T{
+    border: 2px solid white;
+    border-radius: 10px;
+    height: 180px;
+    overflow: hidden;
+    width: 181px;
+    background-image: linear-gradient(180deg, white, red);
+    transition: all 1s;
+    margin-top: 18%;
+    margin-right: 10%;
+    margin-left: 10px;
+}
+
+.J2T:hover{
+    height: 240px;
+    transition: all 1s;
+}
+
+.J2T img{
+    height: 171px;
+    margin: auto 20px;
+    border-radius: 10px;
+}
+
+.J2T p{
+    color: white;
+    margin-left: 22px;
+    margin-top: 20px;
+    font-size: 19px;
+}
+
+.J2T p a{
+    text-decoration: none;
+    color: white;
+}
+
+.J2T p a:hover{
+    color:black;
+}
+
+/* Final dos Grandes jogadores de Truco */
+
+/* final das amostras de truco */
+
+/* inicio das amostras de poker */
+
+.pai-amostra-poker{
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    border-top: 2px solid rgba(177, 6, 6, 0.5);
+    border-bottom: 2px solid rgba(177, 6, 6, 0.5);
+}
+
+.fecharP{
+    display: none;
+    color: white;
+    float: right;
+    margin-right: 21%;
+    font-size: 36px;
+    cursor: pointer;
+    transition: all 1s;
+}
+.fecharP:hover{
+    transform: rotateZ(360deg);
+}
+.menuLateralPoker{
+    height: 71vh;
+    width: 16%;
+    background-image: url(../img/newindex/trucoIndex/fundoMEnu.png);
+    color: white;
+    border-right: 2px solid rgba(177, 6, 6, 0.5);
+    margin-top: 88px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 2px solid rgba(177, 6, 6, 0.5);
+    border-bottom: 2px solid rgba(177, 6, 6, 0.5);
+}
+
+.menuLateralPoker ul:hover{
+    cursor: pointer;
+    border-bottom: 1px solid;
+    color: rgba(177, 6, 6, 0.5);
+}
+
+.menuLateralPoker h1{
+    margin-left: 7%;
+    font-size: 63px;
+}
+
+.menuLateralPoker li{
+    list-style: none;
+    margin-top: 20px;
+    font-size: 30px;
+    margin-left: 10%;
+}
+
+.menuLateralPoker li ul{
+    margin-top: 12px;
+}
+
+
+.explicaçõesPoker{
+    height: 100vh;
+    width: 87%;
+    background-image: url(../img/newindex/pokerIndex/PokerFundInicial.png);
+    background-size: 100%;
+    background-position: center;
+    overflow: hidden;
+    display: block;
+}
+
+/* historia poker */
+
+.historiaPoker{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/newindex/pokerIndex/historia/pokerHistoria.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    transition: background-image 1s;
+    margin-left: 1500px;
+    transition: margin-left 1.5s ease;
+
+}
+.historiaPoker1{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/newindex/pokerIndex/historia/china-irã.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    transition: background-image 1s;
+    transition: margin-left 1s ease;
+}
+.historiaPoker2{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/newindex/pokerIndex/historia/frança.jpg);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    transition: background-image 1s;
+    transition: margin-left 1s ease;
+}
+
+.historiaPoker3{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/newindex/pokerIndex/historia/estadosUnidos.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    transition: background-image 1s;
+    transition: margin-left 1s ease;
+}
+
+.explicaHistoriaPoker{
+    overflow: scroll;
+    height: 444px;
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.732);
+    margin: auto;
+    border-radius: 10px;
+}
+
+.explicaHistoriaPoker::-webkit-scrollbar{
+    width: 10px;
+    height: 10px;
+}
+
+.explicaHistoriaPoker .tituloHP1{
+    color: white;
+    font-size: 63px;
+    margin-bottom: 15px;
+    margin: auto auto;
+    width: 585px;   
+}
+
+.explicaHistoriaPoker a{
+    text-decoration: none;
+    color: white;
+}
+.explicaHistoriaPoker a:hover{
+    color: red;
+}
+
+.explicaHistoriaPoker .textoHP{
+    color: white;
+    font-size: 26px;
+    text-align: justify;
+    margin: 10px 45px 0px 45px;
+}
+/* final historia poker */
+
+/* inicio torneios do poker */
+
+.torneiosPoker{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/newindex/pokerIndex/torneio/cassino.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-top: -653px;
+    transition: background-image 1s;
+    margin-left: 1500px;
+    transition: margin-left 1.5s ease;
+    overflow: hidden;
+    position: relative;
+}
+
+.blur-torneioPoker{
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.blur-torneioPoker a{
+    text-decoration: none;
+    color: white;
+}
+.blur-torneioPoker a:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.tituloPrincipal{
+    color: white;
+    width: 707px;
+    margin: auto;
+    margin-top: 7%;
+    font-size: 55px;
+}
+
+.torneioP1{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    border: 2px solid rgba(177, 6, 6, 0.5);
+    border-radius: 50%;
+    background-image: url(../img/newindex/pokerIndex/torneio/PokerStarsChampionships.jpg);
+    background-size: 87%;
+    background-position: center;
+    box-shadow: 0px 0px 10px 3px white;
+    margin-left: 2%;
+    cursor: pointer;
+    transition: all 1.5s;
+    overflow: hidden;
+}
+.torneioP1 p{
+    color: white;
+    overflow: scroll;
+    margin: 13px 18px 0px 22px;
+    font-size: 26px;
+    scrollbar-width: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 1.5s;
+    width: 355px;
+}
+
+.torneioP11{
+    height: 450px;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, black, black);
+    width: 400px;
+    margin-left: 30%;
+    margin-top: 2%; 
+}
+
+.torneioP2{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    border: 2px solid rgba(177, 6, 6, 0.5);
+    margin-left: 38.5%;
+    border-radius: 50%;
+    background-image: url(../img/newindex/pokerIndex/torneio/LAPT.jpg);
+    background-size: 120%;
+    background-position: center;
+    box-shadow: 0px 0px 10px 3px white;
+    cursor: pointer;
+    transition: all 1.5s;
+    overflow: hidden;
+}
+
+.torneioP2 p{
+    color: white;
+    overflow: scroll;
+    margin: 13px 18px 0px 22px;
+    font-size: 26px;
+    scrollbar-width: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 1.5s;
+    width: 355px;
+}
+
+.torneioP22{
+    height: 450px;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, black, black);
+    width: 400px;
+    margin-left: 30%;
+    margin-top: 2%; 
+}
+
+.torneioP3{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    border: 2px solid rgba(177, 6, 6, 0.5);
+    margin-left: 57%;
+    margin-top: 17.2%;
+    border-radius: 50%;
+    background-image: url(../img/newindex/pokerIndex/torneio/bsop.jpg);
+    background-size: 100%;
+    background-position: center;
+    box-shadow: 0px 0px 10px 3px white;
+    cursor: pointer;
+    transition: all 1.5s;
+    overflow: hidden;
+}
+
+.torneioP3 p{
+    color: white;
+    overflow: scroll;
+    margin: 13px 18px 0px 22px;
+    font-size: 26px;
+    scrollbar-width: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 1.5s;
+    width: 355px;
+}
+
+.torneioP33{
+    height: 450px;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, black, black);
+    width: 400px;
+    margin-left: 30%;
+    margin-top: 2%; 
+}
+
+.torneioP4{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    border: 2px solid rgba(177, 6, 6, 0.5);
+    margin-left: 20%;
+    margin-top: 17.2%;
+    border-radius: 50%;
+    background-image: url(../img/newindex/pokerIndex/torneio/wsop.png);
+    background-size: 100%;
+    background-position: center;
+    box-shadow: 0px 0px 10px 3px white;
+    cursor: pointer;
+    transition: all 1.5s;
+    overflow: hidden;
+} 
+
+.torneioP4 p{
+    color: white;
+    overflow: scroll;
+    margin: 13px 18px 0px 22px;
+    font-size: 26px;
+    scrollbar-width: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 1.5s;
+    width: 355px;
+}
+
+.torneioP44{
+    height: 450px;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, black, black);
+    width: 400px;
+    margin-left: 30%;
+    margin-top: 2%; 
+}
+
+.torneioP5{
+    height: 250px;
+    width: 250px;
+    position: absolute;
+    margin-left: 74%;
+    border: 2px solid rgba(177, 6, 6, 0.5);
+    border-radius: 50%;
+    background-image: url(../img/newindex/pokerIndex/torneio/wopt.jpg);
+    background-size: 120%;
+    background-position: center;
+    box-shadow: 0px 0px 10px 3px white;
+    margin-right: 2%;
+    cursor: pointer;
+    transition: all 1.5s;
+    overflow: hidden;
+}
+
+.torneioP5 p{
+    color: white;
+    overflow: scroll;
+    margin: 13px 18px 0px 22px;
+    font-size: 26px;
+    scrollbar-width: 10px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: all 1.5s;
+    width: 355px;
+}
+
+.torneioP55{
+    height: 450px;
+    border-radius: 10px;
+    background-image: linear-gradient(90deg, black, black);
+    width: 400px;
+    margin-left: 30%;
+    margin-top: 2%; 
+}
+
+.afastar1{
+    margin-left: 1500px;
+}
+
+.afastar2{
+    margin-left: -800px;
+}
+
+.afastar3{
+    margin-top: -800px;
+}
+
+.afastar4{
+    margin-top: 800px;
+}
+
+/* final dos torneios do Poker */
+
+/* inicio dos torneios beneficentes */
+
+.torneiosBeneficentesPoker{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/newindex/pokerIndex/TorneioBF/fundBeneficente.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-top: -656px;
+    transition: background-image 1s;
+    margin-left: 1500px;
+    transition: margin-left 1.5s ease;
+}
+
+.blur-torneiosBeneficentesPoker{
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(3px);
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.blur-torneiosBeneficentesPoker h1{
+    color: white;
+    font-size: 63px;
+    margin-top: 78px;
+    margin-left: 12%;
+    width: 830px;
+}
+
+.blur-torneiosBeneficentesPoker a{
+    text-decoration: none;
+    color: white;
+}
+.blur-torneiosBeneficentesPoker a:hover{
+    cursor: pointer;
+    color: red;
+}
+
+.explicacaoInicialTBP{
+    color: white;
+    width: 830px;
+    text-align: justify;
+    margin-left: 12%;
+    font-size: 24px;
+    margin-top: 2%;
+    transition: 1.5s linear;
+}
+
+.explicacaoInicialTBP button{
+    outline: none;
+    cursor: pointer;
+    width: 210px;
+    height: 30px;
+    border-radius: 5px;
+    background-image: linear-gradient(0deg, black, grey);
+    color: white;
+    font-size: 18px;
+    box-shadow: 0px 0px 6px 3px white;
+}
+.explicacaoInicialTBP button:hover{
+    animation: btnexTBP 0.1s linear 1;
+    background-image: linear-gradient(0deg, black, rgba(177, 6, 6));
+    transition: background-image 2s linear;
+}
+@keyframes btnexTBP {
+    0%{
+        margin-left: 5px
+    }
+    100%{
+        margin-left: 0px; 
+    }
+}
+
+.explicacaoInicialTBP button:active{
+    transform: scale(0.9)
+}
+
+.mostrarTorneiosBP{
+    margin-top: 1000px;
+    width: 830px;
+    height: 470px;
+    transition: all 1.5s linear;
+    margin-left: 12%;
+    display: flex;
+}
+
+.mostrarTorneiosBP .torneiosBFP{
+    height: 100%;
+    width: 270px;
+    margin-left: 6px;
+
+}
+
+.torneiosBFP div{
+    height: 150px;
+    width: 270px;
+    margin-top: 6px;
+    transition: transform 1s;
+    box-shadow: 0px 0px 10px 3px black;
+    background-color: rgba(177, 6, 6, 0.5);
+    text-align: center;
+}
+
+.torneiosBFP div:hover{
+    transform: scale(1.3);
+}
+
+.torneiosBFP div h1{
+    color: white;
+    font-size: 19px;
+    width: 100%;
+    margin-left: 0px;
+    margin-top: 0px;
+}
+
+.torneiosBFP div p{
+    color: white;
+    font-size: 15px;
+    width: 92%;
+    margin-left: 10px;
+    margin-top: 5px;
+    text-align: justify;
+}
+
+
+
+
+/* final dos torneios beneficentes */
+
+/* inicio dos mitos do Poker */
+
+.principaisJogadoresPoker{
+    height: 100%;
+    width: 100%;
+    background-image: url(../img/newindex/trucoIndex/grandesjogadores/jogadoresFund.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    margin-top: -660px;
+    transition: background-image 1s;
+    margin-left: 1500px;
+    transition: margin-left 1.5s ease; 
+    overflow: hidden;
+    position: relative;
+}
+
+.blur-PrincipaisJogadoresPoker{
+    height: 100%;
+    width: 100%;
+    backdrop-filter: blur(1px);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.blur-PrincipaisJogadoresPoker a, li{
+    text-decoration: none;
+    color: white;
+}
+
+.blur-PrincipaisJogadoresPoker a:hover, .blur-PrincipaisJogadoresPoker li:hover{
+    color: red;
+    cursor: pointer;
+}
+
+.inicioJogadoresPoker{
+    height: 88%;
+    width: 100%;
+}
+.blur-PrincipaisJogadoresPoker h1{
+    color: white;
+    font-size: 63px;
+    margin-top: 78px;
+    margin-left: 24%;
+    width: 830px;
+}
+.inicioJogadoresPoker p, .inicioJogadoresPoker ul{
+    color: white;
+    width: 830px;
+    text-align: justify;
+    margin-left: 12%;
+    font-size: 24px;
+    margin-top: 1%;
+}
+
+.inicioJogadoresPoker li{
+    display: inline-block;
+    margin-left: 31px;
+}
+
+.inicioJogadoresPoker li img{
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px 3px white;
+}
+
+.sobreJogadorPK{
+    height: 0px;
+    width: 870px;
+    background-color: rgba(0, 0, 0, 0.9);
+    margin-left: 12%;
+    margin-top: 8%;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: height 2s;
+}
+.sobreJogadorPK::-webkit-scrollbar{
+    height: 0px;
+}
+
+.sobreJogadorPK p{
+    color: white;
+    width: 830px;
+    text-align: justify;
+    font-size: 24px;
+    margin: 2% auto;
+}
+
+.sobreJogadorPK h1{
+    color: white;
+    font-size: 63px;
+    margin-top: 18px;
+    margin-left: 24%;
+    width: 830px;
+}
+
+.jogadorPoker1{
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+    background-image: url(../img/newindex/pokerIndex/principaisJogadoresP/danielNegreanu.png);
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+    transition: margin-top 1s;
+}
+
+.jogadorPoker2{
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+    background-image: url(../img/newindex/pokerIndex/principaisJogadoresP/PhilHellmuth.png);
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+    transition: margin-top 1s;
+}
+.jogadorPoker3{
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+    background-image: url(../img/newindex/pokerIndex/principaisJogadoresP/StuUngar.png);
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+    transition: margin-top 1s;
+}
+.jogadorPoker4{
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+    background-image: url(../img/newindex/pokerIndex/principaisJogadoresP/DoyleBrunson.png);
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+    transition: margin-top 1s;
+}
+.jogadorPoker5{
+    height: 100%;
+    width: 100%;
+    margin-top: 0;
+    background-image: url(../img/newindex/pokerIndex/principaisJogadoresP/AmarilloSlim.jpg);
+    background-size: 100%;
+    background-position: center;
+    position: absolute;
+    transition: margin-top 1s;
+}
+
+.fecharJogadoresPoker{
+    color: white;
+    float: right;
+    margin: -82px 14px 0px 0px;
+    font-size: 35px;
+    cursor: pointer;
+}
+
+
+/* final das amostras de poker */
+
+/* final das amostras de cada jogo */

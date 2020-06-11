@@ -1,0 +1,400 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: black ;   
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(177, 6, 6, 0.5) ;
+}
+.header .container-header ul li .active{
+    color: white;
+}
+.header .container-header ul li a{
+    text-decoration: none;
+    color: black;
+}
+/* botado subir */
+
+.subir {
+    height: 85px;
+    width: 40px;
+    background: none;
+    border-radius: 100%;
+    position: fixed;
+    margin-left: 93%;
+    margin-top: 32%;
+    z-index: 1;
+    text-align: center;
+    color: white;
+}
+
+.subir h3{
+    opacity: 0;
+}
+.subir:hover h3{
+    opacity: 1;
+}
+.subir button{
+    height: 50%;
+    width: 100%;
+    border-radius: 100%;
+    background-image: url(../img/arrows.png);
+    background-size: 85%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(177, 6, 6, 0.5);
+    outline: none;
+    margin-left: 6px;
+}
+.subir button:hover{
+    cursor: pointer;
+    animation-name: but2;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+}
+@keyframes but2{
+    0%{
+        transform: rotate(0deg)                              
+    }
+    25%{
+        transform: rotate(90deg)
+    }
+    50%{
+        transform: rotate(180deg)
+    }
+    75%{
+        transform: rotate(270deg)
+    }
+    100%{
+        transform: rotate(360deg)
+    }
+}
+/* botao subir final*/
+
+/* INICIO DO HEADER */
+.header{
+    height: 86px;
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(1px);
+    background-color: rgba(177, 6, 6, 0.5);
+    margin-top: -86px;
+    z-index: 1;
+    
+}
+.header .container-header{
+    height: 96%;
+    width: 85%;
+    margin: auto;
+    border-bottom: 3px solid black;
+    border-radius: 30px
+}
+.header .container-header img{
+    float: left;
+    height: 79px;
+    width: 90px;
+    margin-top: 2px;
+}
+.header .container-header ul{
+    list-style:none;
+    float: right;
+    font-size:25px;
+    margin-top: 30px;
+    
+}
+.header .container-header ul li{
+    display: inline-block;
+    margin-left: 13px;
+}
+body{
+    font-family: sans-serif;
+    background-color: black;
+}
+/* FINAL DO HEADER */
+
+
+.pai{
+    height: 87vh;
+    width: 100%;
+    background: rgba(139, 19, 19, 0.829);
+    margin-top: 86px;
+}
+.pai ul{
+    position: absolute;
+    height: 87%;
+    width: 100%;   
+    background: none;
+}
+.pai .blur{
+    backdrop-filter: blur(0px);
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    width: 100%
+}
+.pai ul li{
+    list-style: none;
+    position: relative;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+    border-right: 1px solid black;
+    float: left;
+    box-sizing: border-box;
+    transition: 0.5s;
+    overflow: hidden;
+}
+/* inicio do efeito com as letras */
+/* efeito do primeiro quadro */
+.pai ul .li1 h3{
+    font-size: 92px;
+    color: white;
+    opacity: 1;
+    
+}
+.pai ul .li1:hover h3{
+    opacity: 0;
+    transition: 0.5s
+}
+.pai ul .li1 h2{
+    font-size: 92px;
+    color: white;
+    opacity: 0;
+    margin-top: -485px;
+    transition: 0.5s;
+}
+.pai ul .li1:hover h2{
+    width: 100%;
+    opacity: 1;
+}
+/* final do primeiro quadro */
+
+/* inicio do segundo quadro */
+.pai ul .li2 h3{
+    font-size: 92px;
+    color: white;
+    opacity: 1;
+    
+}
+.pai ul .li2:hover h3{
+    opacity: 0;
+    transition: 0.5s
+}
+.pai ul .li2 h2{
+    font-size: 92px;
+    color: white;
+    opacity: 0;
+    margin-top: -485px;
+    transition: 0.5s;
+}
+.pai ul .li2:hover h2{
+    width: 100%;
+    opacity: 1;
+}
+/* final do segundo quadro */
+
+/* inicio do terceiro quadro */
+.pai ul .li3 h3{
+    font-size: 92px;
+    color: white;
+    opacity: 1;
+    
+}
+.pai ul .li3:hover h3{
+    opacity: 0;
+    transition: 0.5s
+}
+.pai ul .li3 h2{
+    font-size: 92px;
+    color: white;
+    opacity: 0;
+    margin-top: -366px;
+    transition: 0.2s;
+}
+.pai ul .li3:hover h2{
+    width: 100%;
+    opacity: 1;
+}
+/* final do terceiro quadro */
+
+/* inicio do quarto quadro */
+.pai ul .li4 h3{
+    font-size: 80px;
+    color: white;
+    opacity: 1;
+    
+}
+.pai ul .li4:hover h3{
+    opacity: 0;
+    transition: 0.5s
+}
+.pai ul .li4 h2{
+    font-size: 92px;
+    color: white;
+    opacity: 0;
+    margin-top: -516px;
+    transition: 0.2s;
+}
+.pai ul .li4:hover h2{
+    width: 100%;
+    opacity: 1;
+}
+
+/* final do quarto quadro */
+
+/* inicio do quinto quadro */
+
+.pai ul .li5 h3{
+    font-size: 50px;
+    color: white;
+    opacity: 1;
+    
+}
+.pai ul .li5:hover h3{
+    opacity: 0;
+    transition: 0.5s
+}
+.pai ul .li5 h2{
+    font-size: 92px;
+    color: white;
+    opacity: 0;
+    margin-top: -488px;
+    transition: 0.5s;
+}
+.pai ul .li5:hover h2{
+    width: 100%;
+    opacity: 1;
+}
+
+/* final do quinto quadro */
+/* final do efeito com as letras */
+
+
+.pai ul li:nth-child(1){
+    background-image: url('../img/truco.jpg');
+    background-size: cover;
+    background-position: center;
+    
+    
+}
+.pai ul li:nth-child(2){
+    background-image: url('../img/poker.png');
+    background-size: cover;
+    background-position: center;
+}
+.pai ul li:nth-child(3){
+    background-image: url('../img/pife.png');
+    background-size: cover;
+    background-position: center;
+}
+.pai ul li:nth-child(4){
+    background-image: url('../img/buraco.png');
+    background-size: cover;
+    background-position: center;
+}
+.pai ul li:nth-child(5){
+    background-image: url('../img/blackjack.png');
+    background-size: cover;
+    background-position: center;
+    /* float: right; */
+}
+
+.pai ul:hover li{
+width: 10%;
+}
+.pai ul li:hover{
+    width: 60%;  
+}
+.pai ul li .textos-iniciais{
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    background: rgba(22, 22, 22, 0.685);
+    width: 100%;
+    box-sizing: border-box;
+    height: 30%;
+    opacity: 0;
+    color: white;
+}
+.pai ul li:hover .textos-iniciais{
+    bottom: 0%;
+    transition: 0.5s;
+    transition-delay: 0.3s;
+    opacity: 1;
+}
+
+.pai ul li .blur .textos-iniciais p a{
+    text-decoration: none;
+    color: white
+}
+.pai ul li .blur .textos-iniciais p a:hover{
+    color: red;
+}
+/* final das divs com os jogos */
+
+
+/* inicio da parte contato secundária */
+
+.contato-secundario{
+    width: 51%;
+    height: 97%;
+    background: rgb(89, 3, 3);
+    float: right;
+    color: white;
+    text-align: center;
+    padding-top: 1%;
+    border-bottom: 3px solid rgb(89, 3, 3);
+}
+.contato-secundario h2{
+    margin-top: 2%;
+}
+.contato-secundario .moldura-contato{
+    width: 270px;
+    height: 300px;
+    border: 3px solid white;
+    margin: 6% -16% 0% 19%;
+    background-image: url(../img/dev.png);
+    background-size: 150%;
+    background-position: center;
+    float: left;
+}
+
+.contato-secundario .contatos{
+    margin-top: 3%;
+}
+
+.contato-secundario .contatos img{
+    height: 60px;
+    width: 60px;
+    margin-top: 10px;
+    color: white
+}
+.contato-secundario .textoF-contato{
+    height: 84px;
+    width: 436px;
+    border: 3px solid white;
+    margin: auto;
+    margin-top: 6%;
+}
+
+.contato-secundario .textoF-contato p{
+    margin: auto;
+    color: white;
+    margin-top: 4%;
+    width: 82%;
+}
+
+
+
+/* final da contato secundaria */

@@ -1,0 +1,126 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.pai-poker {
+    width: 100%;
+    height: 185vh;
+    background-image: url(../img/poker/fundPoker.png);
+    background-size: 100%;
+} 
+.container{
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    background: none;
+    margin: auto;   
+}
+
+.container .moldura1poker{
+    width: 285px;
+    height: 375px;
+    background-color: white;
+    box-shadow: 0 0 10px white;
+    margin-top: 11%;
+    border-radius: 20px;
+    background-size: 100%;
+}
+.container .moldura2poker{
+    width: 370px;
+    height: 485px;
+    box-shadow: 0 0 15px white;
+    border-radius: 20px;
+    margin-top: 7%;
+    background-image: url(../img/poker/pk1.png);
+    background-size: 100%;
+}
+.container .moldura3poker{
+    width: 285px;
+    height: 375px;
+    background-color: white;
+    box-shadow: 0 0 10px white;
+    margin-top: 11%;
+    border-radius: 20px;
+    background-size: 100%;
+}
+.container .botão1poker{
+    margin: auto; 
+    padding: 30px;
+    border-radius: 100%;
+    background-image: url(../img/botãoEsq.png);
+    background-size: 100%;
+    outline: none;
+    border: 1px solid white
+}
+.container .botão2poker{
+    margin: auto;
+    padding: 30px;
+    border-radius: 100%;
+    background-image: url(../img/botãoDir.png);
+    background-size: 100%;
+    outline: none;
+    border: 1px solid white;
+}
+.container .botão2poker:hover, .container .botão1poker:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white; 
+}
+.container .botão2poker:active, .container .botão1poker:active{
+    position: relative;
+    top:2px;
+
+}
+
+.container .moldura1poker .blur{
+    backdrop-filter: blur(2px);
+    background-color: rgba(7, 6, 6, 0.397);
+    height: 100%;
+    width: 100%;
+    border-radius: 20px
+}
+.container .moldura3poker .blur{
+    backdrop-filter: blur(2px);
+    background-color: rgba(7, 6, 6, 0.397);
+    height: 100%;
+    width: 100%;
+    border-radius: 20px
+}
+/* inicio do vídeo */
+
+.video-poker{
+    width: 100%;
+    height: 85vh;
+   
+}
+.video-poker .container-poker{
+    width: 95%;
+    height: 85vh;
+    background: none;
+    margin: auto
+}
+.video-poker .container-poker video{
+    height: 70%;
+    margin-top: 2%;
+    background: none;
+    width: 100%;
+    outline: none;
+}
+
+.video-poker .container-poker h2{
+    color: white;
+    margin-top: -4%;
+    margin-bottom: 4%;
+}
+.video-poker .container-poker a{
+    color: white;
+    text-decoration: none;
+}
+.video-poker .container-poker a:hover{
+    color: red
+}
+
+/* final do video */

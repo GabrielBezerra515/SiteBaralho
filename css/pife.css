@@ -1,0 +1,126 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.pai-pife {
+    width: 100%;
+    height: 185vh;
+    background-image: url(../img/pife/FUNDPIFE.PNG);
+    background-size: 100%;
+} 
+.contpife{
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    background: none;
+    margin: auto;   
+}
+
+.container .moldura1pife{
+    width: 285px;
+    height: 375px;
+    background-color: white;
+    box-shadow: 0 0 10px white;
+    margin-top: 11%;
+    border-radius: 20px;
+    background-size: 100%;
+}
+.container .moldura2pife{
+    width: 370px;
+    height: 485px;
+    box-shadow: 0 0 15px white;
+    border-radius: 20px;
+    margin-top: 7%;
+    background-image: url(../img/pife/pf0.png);
+    background-size: 100%;
+}
+.container .moldura3pife{
+    width: 285px;
+    height: 375px;
+    background-color: white;
+    box-shadow: 0 0 10px white;
+    margin-top: 11%;
+    border-radius: 20px;
+    background-size: 100%;
+}
+.container .botão1pife{
+    margin: auto; 
+    padding: 30px;
+    border-radius: 100%;
+    background-image: url(../img/botãoEsq.png);
+    background-size: 100%;
+    outline: none;
+    border: 1px solid white
+}
+.container .botão2pife{
+    margin: auto;
+    padding: 30px;
+    border-radius: 100%;
+    background-image: url(../img/botãoDir.png);
+    background-size: 100%;
+    outline: none;
+    border: 1px solid white;
+}
+.container .botão2pife:hover, .container .botão1pife:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white; 
+}
+.container .botão2pife:active, .container .botão1pife:active{
+    position: relative;
+    top:2px;
+
+}
+
+.container .moldura1pife .blur{
+    backdrop-filter: blur(2px);
+    background-color: rgba(7, 6, 6, 0.397);
+    height: 100%;
+    width: 100%;
+    border-radius: 20px
+}
+.container .moldura3pife .blur{
+    backdrop-filter: blur(2px);
+    background-color: rgba(7, 6, 6, 0.397);
+    height: 100%;
+    width: 100%;
+    border-radius: 20px
+}
+/* inicio do vídeo */
+
+.video-pife{
+    width: 100%;
+    height: 85vh;
+   
+}
+.video-pife .container-pife{
+    width: 95%;
+    height: 85vh;
+    background: none;
+    margin: auto
+}
+.video-pife .container-pife video{
+    height: 70%;
+    margin-top: 2%;
+    background: none;
+    width: 100%;
+    outline: none;
+}
+
+.video-pife .container-pife h2{
+    color: white;
+    margin-top: -4%;
+    margin-bottom: 4%;
+}
+.video-pife .container-pife a{
+    color: white;
+    text-decoration: none;
+}
+.video-pife .container-pife a:hover{
+    color: red
+}
+
+/* final do video */

@@ -1,0 +1,128 @@
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+.pai-buraco {
+    width: 100%;
+    height: 185vh;
+    background-image: url(../img/buraco/fundburaco.png);
+    background-size: 100%;
+} 
+.contburaco{
+    width: 95%;
+    height: 100vh;
+    display: flex;
+    background: none;
+    margin: auto;   
+}
+
+.container .moldura1buraco{
+    width: 285px;
+    height: 375px;
+    background-color: white;
+    box-shadow: 0 0 10px white;
+    margin-top: 11%;
+    border-radius: 20px;
+    background-size: 100%;
+    background-image: url(../img/buraco/bc21.png);
+}
+.container .moldura2buraco{
+    width: 370px;
+    height: 485px;
+    box-shadow: 0 0 15px white;
+    border-radius: 20px;
+    margin-top: 7%;
+    background-image: url(../img/buraco/bc0.png);
+    background-size: 100%;
+}
+.container .moldura3buraco{
+    width: 285px;
+    height: 375px;
+    background-color: white;
+    box-shadow: 0 0 10px white;
+    margin-top: 11%;
+    border-radius: 20px;
+    background-image: url(../img/buraco/bc1.png);
+    background-size: 100%;
+}
+.container .botão1buraco{
+    margin: auto; 
+    padding: 30px;
+    border-radius: 100%;
+    background-image: url(../img/botãoEsq.png);
+    background-size: 100%;
+    outline: none;
+    border: 1px solid white
+}
+.container .botão2buraco{
+    margin: auto;
+    padding: 30px;
+    border-radius: 100%;
+    background-image: url(../img/botãoDir.png);
+    background-size: 100%;
+    outline: none;
+    border: 1px solid white;
+}
+.container .botão2buraco:hover, .container .botão1buraco:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px white; 
+}
+.container .botão2buraco:active, .container .botão1buraco:active{
+    position: relative;
+    top:2px;
+
+}
+
+.container .moldura1buraco .blur{
+    backdrop-filter: blur(2px);
+    background-color: rgba(7, 6, 6, 0.397);
+    height: 100%;
+    width: 100%;
+    border-radius: 20px
+}
+.container .moldura3buraco .blur{
+    backdrop-filter: blur(2px);
+    background-color: rgba(7, 6, 6, 0.397);
+    height: 100%;
+    width: 100%;
+    border-radius: 20px
+}
+/* inicio do vídeo */
+
+.video-buraco{
+    width: 100%;
+    height: 85vh;
+   
+}
+.video-buraco .container-buraco{
+    width: 95%;
+    height: 85vh;
+    background: none;
+    margin: auto
+}
+.video-buraco .container-buraco video{
+    height: 70%;
+    margin-top: 2%;
+    background: none;
+    width: 100%;
+    outline: none;
+}
+
+.video-buraco .container-buraco h2{
+    color: white;
+    margin-top: -4%;
+    margin-bottom: 4%;
+}
+.video-buraco .container-buraco a{
+    color: white;
+    text-decoration: none;
+}
+.video-buraco .container-buraco a:hover{
+    color: red
+}
+
+/* final do video */
