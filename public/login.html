@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/login.css">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- header -->
+    <div class="header" id="header">
+            <div class="container-header">
+                <a href="#html"><img src="img/logo-baralho.png"></a>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="jogos.html">Jogos</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contact.html">Contato</a></li>
+                    <li><a href="login.html" class="active">Login</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- final do header -->
+
+    <div class="pai">
+        <div class="abertura1">
+            <div class="imagem1">
+            </div>
+        </div> <!--div para abertura-->
+        <div class="abertura2">
+            <div class="imagem2">
+            </div>
+        </div> <!--div para abertura-->
+            <div class="login" id="logi">
+                <h1>Login</h1>
+                <form action="/verLogin" method="POST">
+                <input type="email" placeholder="e-mail" id="nome" name="emailLogin" class="input1" required>
+                <input type="password" placeholder="Password" id="senha" name="senhaLogin" class="input2"  required>
+                <h4><a href="cadastro.html">Cadastre-se</a></h4>
+                <button type="submit" onclick="cad()">Entrar</button>
+                </form>  
+            </div>
+            
+    </div>
+</body>
+</html>
+<script src="js/loginCadastro.js"></script>

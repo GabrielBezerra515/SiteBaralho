@@ -1,0 +1,193 @@
+ *{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* INICIO DO HEADER */
+.header{
+    height: 86px;
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(1px);
+    background-color: rgba(177, 6, 6, 0.5);
+    margin-top: 0px;
+    z-index: 1;
+}
+
+.header .container-header{
+    height: 96%;
+    width: 85%;
+    margin: auto;
+    border-bottom: 3px solid black;
+    border-radius: 30px
+}
+.header .container-header img{
+    float: left;
+    height: 79px;
+    width: 90px;
+    margin-top: 2px;
+}
+.header .container-header ul{
+    list-style:none;
+    float: right;
+    font-size:25px;
+    margin-top: 30px;
+    
+}
+.header .container-header ul li{
+    display: inline-block;
+    margin-left: 13px;
+}
+.header .container-header ul li .active{
+    color: white;
+}
+.header .container-header ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+/* final do header */
+
+.pai-sobre{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-image: linear-gradient(90deg, black, rgba(255, 0, 0, 0.9), black);
+    overflow: hidden;
+}
+
+/* inicio dos dev */
+
+.dev_sobre{
+    width: 40%;
+    float: left;
+    height: 100%;
+    color: white
+}
+
+.imgdev{
+    background-image: url(../img/dev.png);
+    background-size: 185%;
+    background-position: center;
+    height: 180px;
+    border-radius: 50%;
+    width: 180px;
+    margin-top: 25%;
+    margin-left: 50%;
+    margin-bottom: 3%;
+    box-shadow: 0px 0px 8px 4px black
+}
+
+.dev_sobre h2{
+    margin-left: 51%;
+}
+
+.dev_sobre p{
+    margin-left: 56%;
+    font-size: 19px;
+}
+
+.icones {
+    margin-left: 42%;
+    height: 100px;
+    width: 66%;
+}
+
+.icones i{
+    font-size: 75px;
+    margin-top: 10px;
+    color: black;
+    cursor: pointer;
+    height: 0;
+    border-radius: 8px;
+    transition: 0.5s;
+}
+
+.icones i:hover{
+    box-shadow: 0px 0px 0px 1px black
+}
+
+/* final dos dev */
+
+/* linha do tempo inicio */
+
+.timeline-pai{
+    height: 100vh;
+    width: 60%;
+    /* background-color: red; */
+    float: right;
+}
+
+.timeline{
+    position: relative;
+    margin: 50px auto;
+    padding: 62px 0;
+    width: 500px;
+}
+.timeline::before{
+    content: '';
+    position: absolute;
+    right: 100%;
+    width: 4px;
+    height: 100%;
+    background-image: linear-gradient(180deg, black,red);
+    margin-top: -5.5%;
+}
+
+.timeline ul{
+    color: white
+}
+
+.timeline ul li{
+    line-height: normal;
+    position: relative;
+    width: 50%;
+    padding: 22px 40px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+.content{
+    padding-bottom: 20px;
+}
+
+.timeline ul li::before{
+    content: '';
+    position: absolute;
+    top: 26px;
+    left: -7px;
+    width: 10px;
+    height: 10px;
+    background-color:white;
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px 3px white
+}
+
+.timeline ul li h3{
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    color: white;
+}
+
+.timeline ul li p{
+    margin: 10px 0 0;
+    padding: 0;
+    color: black;
+    width: 450px;
+}
+
+.timeline ul li .time{
+    position: absolute;
+    top: 14px;
+    left: -100px;
+    margin: 0;
+    padding: 8px 16px;
+    background-color: rgba(177, 6, 6, 0.5);
+    border-radius: 8px;
+    color: white;
+    box-shadow: 0px 0px 5px 3px black
+}
+
+/* linha do tempo final */

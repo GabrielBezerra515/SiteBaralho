@@ -1,0 +1,257 @@
+*{
+    padding: 0;
+    border: 0;
+    margin: 0;
+}
+::-webkit-scrollbar{
+    width: 5px;
+}
+
+::-webkit-scrollbar-track{
+    background: black ;   
+}
+
+::-webkit-scrollbar-thumb{
+    background: rgba(177, 6, 6, 0.5) ;
+}
+
+body{
+    font-family: sans-serif;
+}
+/* botao subir final*/
+
+/* INICIO DO HEADER */
+.header{
+    height: 86px;
+    width: 100%;
+    position: fixed;
+    backdrop-filter: blur(1px);
+    background-color: rgba(177, 6, 6, 0.5);
+    /* margin-top: -86px; */
+    z-index: 1;
+    
+}
+.header .container-header{
+    height: 96%;
+    width: 85%;
+    margin: auto;
+    border-bottom: 3px solid black;
+    border-radius: 30px
+}
+.header .container-header img{
+    float: left;
+    height: 79px;
+    width: 90px;
+    margin-top: 2px;
+}
+.header .container-header ul{
+    list-style:none;
+    float: right;
+    font-size:25px;
+    margin-top: 30px;
+}
+.header .container-header ul li{
+    display: inline-block;
+    margin-left: 13px;
+}
+.header .container-header ul li a{
+    text-decoration: none;
+    color: black;
+}
+.header .container-header ul li .active{
+    color: white;
+}
+
+/* FINAL DO HEADER */
+
+
+/* inicio contact */
+.pai-contact{
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/fundContact.png);
+    background-size: 100%;
+    background-position: center;
+    overflow: hidden;
+}
+
+.pai-contact .moldura-contact{
+    height: 275px;
+    width: 300px;
+    border-radius: 100%;
+    background-image: url(../img/logo-baralho.png);
+    background-size: 95%;
+    background-position: center;
+    background-color: rgba(177, 6, 6, 0.5);
+    margin-left: 150px;
+    margin-top: 12%;
+    background-repeat: no-repeat;
+    margin-bottom: 2%;
+    border: 5px solid black;
+}
+.pai-contact .moldura-contact:hover{
+    border-bottom: 5px solid red;
+    border-right: 5px solid white ;
+    border-top: 5px solid yellow;
+    border-left: 5px solid green;
+    animation-name: gr1;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease;
+
+}
+@keyframes gr1{
+    
+    25%{
+        border-bottom: 5px solid green;
+        border-right: 5px solid red;
+        border-top: 5px solid white;
+        border-left: 5px solid yellow;
+    }
+    50%{
+        border-bottom: 5px solid yellow;
+        border-right: 5px solid green;
+        border-top: 5px solid red;
+        border-left: 5px solid white;
+    }
+    75%{
+        border-bottom: 5px solid white;
+        border-right: 5px solid yellow;
+        border-top: 5px solid green;
+        border-left: 5px solid red;
+    }
+    100%{
+        border-bottom: 5px solid red;
+        border-right: 5px solid white;
+        border-top: 5px solid yellow;
+        border-left: 5px solid green;
+    }
+}.pai-contact a{
+    text-decoration: none;
+    color: black;
+}
+
+.pai-contact .facebook{
+    height: 64px;
+    width: 100px;
+    background: rgba(177, 6, 6, 0.5);
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 16px;
+    margin-left: 145px;
+    padding-top: 12px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.pai-contact .facebook:hover{
+    height: 95px;
+    transition: 0.8s;
+}
+.pai-contact .facebook .imagem{
+    height: 64px;
+    width: 64px;
+    background-image: url(../img/facebook.png);
+    background-size: 100%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.pai-contact .whats{
+    height: 64px;
+    width: 100px;
+    background: rgba(177, 6, 6, 0.5);
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 16px;
+    padding-top: 12px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.pai-contact .whats:hover{
+    height: 95px;
+    transition: 0.8s;
+}
+.pai-contact .whats .imagem{
+    height: 64px;
+    width: 64px;
+    background-image: url(../img/whatsapp.png);
+    background-size: 100%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.pai-contact .instagram{
+    height: 64px;
+    width: 100px;
+    background: rgba(177, 6, 6, 0.5);
+    float: left;
+    text-align: center;
+    overflow: hidden;
+    padding-bottom: 16px;
+    padding-top: 12px;
+    border: 2px solid black;
+    border-radius: 10px;
+}
+.pai-contact .instagram:hover{
+    height: 95px;
+    transition: 0.8s;
+}
+.pai-contact .instagram .imagem{
+    height: 64px;
+    width: 64px;
+    background-image: url(../img/instagram.png);
+    background-size: 100%;
+    margin: auto;
+    margin-bottom: 15px;
+}
+.pai-contact .instagram h5{
+    font-size: 68%;
+}
+/* inicio da sugestão  */
+.sugestão{
+    height: 425px;
+    width: 400px;
+    float: right;
+    background: rgba(177, 6, 6, 0.5);
+    margin-top:-37%;
+    margin-right: 150px;
+    border-radius: 10px;
+    border: 3px solid black;
+}
+.sugestão h2{
+    margin: 5% 0px 5% 33%;
+}
+.sugestão b{
+    margin-left: 30px;
+}
+.sugestão input, .sugestão textarea{
+    margin-left: 30px;
+    margin-bottom: 15px;
+    padding: 10px;
+    width: 80%;
+    background-color: black;
+    color: white;
+    outline: none;
+}
+
+.sugestão .mensagem{
+    height: 30%;
+}
+
+.sugestão button{
+    height: 30px;
+    width: 100px;
+    margin: 0 0 0 37%;
+    background: black;
+    color: white;
+    font-weight: 800;
+    border-radius: 10px;
+}
+.sugestão button:hover{
+    background: rgba(177, 6, 6, 0.842);
+    color: black;
+    box-shadow: 0px 0px 10px 3px black;
+    cursor: pointer;
+}
+/* final da sugestão */
+/* final contact */
