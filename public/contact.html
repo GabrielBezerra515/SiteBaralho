@@ -20,6 +20,9 @@
                 <li><a href="login.html">Login</a></li>
             </ul>
         </div>
+        <div class="logout" id="logout">
+            <img src="img/sair.png" onclick="sairSite()">
+        </div>
     </div>
     <!-- final do header -->
 
@@ -41,16 +44,41 @@
     </div>
     <!-- final da contact -->
     <!-- inicio da sugestão -->
-    <div class="sugestão">
+    <form class="sugestão" action="/addMensagem" method="POST" onsubmit="enviada()">
         <h2>Sugestões?</h2>
         <b>Nome:</b><br>
-        <input type="text"><br>
+        <input type="text" name="nomeCont" required><br>
         <b>Email:</b><br>
-        <input type="text"><br>
+        <input type="email" name="emailCont" required><br>
         <b>Mensagem:</b><br>
-        <textarea class="mensagem" id="" cols="30" rows="10"></textarea> <!-- utilizar o textarea -->
-        <button>Enviar</button>
-    </div>
+        <textarea name="mensagem" required class="mensagem" cols="30" rows="10"></textarea> <!-- utilizar o textarea -->
+        <button type="submit">Enviar</button>
+        <br>
+        <div id="resultado" class="resultadoContat"></div>
+    </form>
     <!-- final da sugestão -->
 </body>
 </html>
+<script>
+
+function enviada(){
+    resultado.innerHTML = '<span class = "resultadoContatSpan">mensagem enviada com sucesso ✔ <br> Confira seu email 📧</span>'
+};
+
+setTimeout(() => {
+    let usuario = sessionStorage.getItem('usuario');
+    if(usuario){
+        logout.style.marginRight = '0px'
+    }
+    else
+    {
+        logout.style.marginRight = '-90px'
+    }
+}, 1);
+
+function sairSite(){
+    sessionStorage.clear();
+    window.location.href = 'index.html'
+}
+
+</script>

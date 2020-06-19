@@ -70,6 +70,25 @@ body{
 }
 /* FINAL DO HEADER */
 
+/* logout */
+
+.logout{
+    float: right;
+    margin-top: -100px;
+    margin-right: -90px;
+    height: 100px;
+    transition: margin-rigth 0.5s;
+}
+
+.logout img{
+    height: 80px;
+    margin-top: 20px;
+    margin-right: 14px;
+    cursor: pointer;
+}
+
+/* logout */
+
 /* inicio div de abertura */
 .abertura1{
     float: left;

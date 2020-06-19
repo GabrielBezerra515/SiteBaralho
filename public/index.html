@@ -23,6 +23,9 @@
                 <li><a href="login.html">Login</a></li>
             </ul>
         </div>
+        <div class="logout" id="logout">
+            <img src="img/sair.png" onclick="sairSite()">
+        </div>
     </div>
     <!-- final do header -->
 
@@ -728,7 +731,27 @@
 
 </html>
 
-<!-- script do btn Subir Index -->
+<script>
+
+setTimeout(() => {
+    let usuario = sessionStorage.getItem('usuario');
+    if(usuario){
+        logout.style.marginRight = '0px'
+    }
+    else
+    {
+        logout.style.marginRight = '-90px'
+    }
+}, 1);
+
+function sairSite(){
+    sessionStorage.clear();
+    window.location.href = 'index.html'
+}
+
+</script>
+
+<!-- script do btn Subir Index-->
 <script>
     function subirbtnIndex(){
         btnSubirIndex.style.transition = 'transform 1s';

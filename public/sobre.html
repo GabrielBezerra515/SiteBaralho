@@ -21,6 +21,9 @@
                 <script src="https://kit.fontawesome.com/c8284bd1fb.js" crossorigin="anonymous"></script>
             </ul>
         </div>
+        <div class="logout" id="logout">
+                <img src="img/sair.png" onclick="sairSite()">
+        </div>
     </div>
     <!-- final do header -->
 
@@ -93,3 +96,20 @@
     
 </body>
 </html>
+<script>
+setTimeout(() => {
+    let usuario = sessionStorage.getItem('usuario');
+    if(usuario){
+        logout.style.marginRight = '0px'
+    }
+    else
+    {
+        logout.style.marginRight = '-90px'
+    }
+}, 1);
+
+function sairSite(){
+    sessionStorage.clear();
+    window.location.href = 'index.html'
+}
+</script>

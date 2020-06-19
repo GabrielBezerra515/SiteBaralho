@@ -11,17 +11,20 @@
 
     <!-- header -->
     <div class="header" id="header">
-            <div class="container-header">
-                <a href="#html"><img src="img/logo-baralho.png"></a>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="jogos.html">Jogos</a></li>
-                    <li><a href="contact.html">Contato</a></li>
-                    <li><a href="login.html" class="active">Login</a></li>
-                </ul>
-            </div>
+        <div class="container-header">
+            <a href="#html"><img src="img/logo-baralho.png"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="jogos.html">Jogos</a></li>
+                <li><a href="contact.html">Contato</a></li>
+                <li><a href="login.html" class="active">Login</a></li>
+            </ul>
         </div>
-        <!-- final do header -->
+        <div class="logout" id="logout">
+            <img src="img/sair.png" onclick="sairSite()">
+        </div>
+    </div>
+    <!-- final do header -->
         
     <div class="pai">
         <div class="cadastro" id="cadastro">
@@ -30,7 +33,7 @@
             <input type="text" name="nome" placeholder="Username" id="user" class="inputCad3" required><br>
             <input type="email" name="email" placeholder="e-mail" id="nome" class="inputCad1" required><br>
             <input type="password" name="senha" placeholder="Password" id="senha" class="inputCad2"  required><br>
-            <button type="submit" onclick="cad()">Cadastrar</button>
+            <button type="submit">Cadastrar</button>
             </form>
         </div>
     </div>

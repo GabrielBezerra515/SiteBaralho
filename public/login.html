@@ -21,6 +21,9 @@
                     <li><a href="login.html" class="active">Login</a></li>
                 </ul>
             </div>
+            <div class="logout" id="logout">
+                <img src="img/sair.png" onclick="sairSite()">
+            </div>
         </div>
         <!-- final do header -->
 
@@ -35,11 +38,11 @@
         </div> <!--div para abertura-->
             <div class="login" id="logi">
                 <h1>Login</h1>
-                <form action="/verLogin" method="POST">
-                <input type="email" placeholder="e-mail" id="nome" name="emailLogin" class="input1" required>
+                <form onsubmit="return autenticar()" method="POST">
+                <input type="nome" placeholder="nome" id="nome" name="nomeLogin" class="input1" required>
                 <input type="password" placeholder="Password" id="senha" name="senhaLogin" class="input2"  required>
                 <h4><a href="cadastro.html">Cadastre-se</a></h4>
-                <button type="submit" onclick="cad()">Entrar</button>
+                <button type="submit">Entrar</button>
                 </form>  
             </div>
             
@@ -47,3 +50,31 @@
 </body>
 </html>
 <script src="js/loginCadastro.js"></script>
+<script>
+
+let sessao;
+
+function autenticar(){
+    let formulario = {
+        nome: nome.value,
+        senha: senha.value
+    }
+
+    fetch('/verLogin', {
+        method: "POST",
+        headers: {
+        "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formulario)
+    }).then(result => {
+        result.json().then(resposta => {
+            sessionStorage.setItem('usuario', resposta);
+            window.location.href = 'jogos.html'
+        })
+    });
+
+
+    return false;
+}
+
+</script>
