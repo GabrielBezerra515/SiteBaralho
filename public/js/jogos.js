@@ -1,24 +1,20 @@
 function iniciar(){
     let usuario = sessionStorage.getItem('usuario')
-        if(!usuario){
-            window.location.href = 'login.html'
-            logout.style.marginRight = '-90px'
-        }
-        else
-        {
-            logout.style.marginRight = '0px'
-        }
-        
-        function sairSite(){
+    if(!usuario){
+        window.location.href = 'login.html'
+        logout.style.marginRight = '-90px'
+    }
+    else
+    {
+        logout.style.marginRight = '0px'
+    }
+    // sessionStorage.removeItem('usuaio')
+}
+
+function sairSite(){
             sessionStorage.clear();
             window.location.href = 'index.html'
         }
-
-        // sessionStorage.clear(); //limpar sessão no navegador
-        // sessionStorage.removeItem('usuaio')
-}
-
-
 
 
 

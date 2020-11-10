@@ -40,12 +40,12 @@ app.get('/jogos', function (req,res){
 app.post('/addUser', function(req, res){
 
     var mailOptions = {
-        from: 'bizasdeck@gmail.com',
+        from: "Biza's Deck",
         to: req.body.email,
         subject: "Bem-Vindo ao Biza's Deck",
-        html: `Olá ${req.body.nome}! <br><br> Ficamos muito felizes por você ter se reunido a nossa equipe. 
-        <br>Saiba que sua opinião sempre será ouvido e bem-vinda, então pedidos que você se sinta à vontade 
-        para nos enviar uma mensagem na nossa área de contato.<br><br>
+        html: `Olá ${req.body.nome}! <br><br> Ficamos felizes por ter se reunido a nossa equipe. 
+        <br>Saiba que sua opinião sempre será ouvida e bem-vinda, <br> pedidos que sinta-se à vontade 
+        para nos enviar uma mensagem com sugestões ou elogios.<br><br>
         A equipe Biza's Deck agradece!`
     };
       
@@ -80,8 +80,7 @@ app.post('/verLogin', function(req,res){
             res.redirect('/login')
         }
         else if(result == 0){
-            console.log('Dado não existe ' + err);
-            res.redirect('/login') 
+            console.log('Dado não existe');
         }
         else 
         {
@@ -99,11 +98,12 @@ app.post('/addMensagem', function(req,res){
     let mensagem = req.body.mensagem;
 
     var mailOptions = {
-        from: 'bizasdeck@gmail.com',
+        from: "Biza's Deck",
         to: emailCont,
         subject: "Biza's Deck agradece!",
-        html: `Obrigado Pela sugestão ${nomeCont}! <br> Ficamos muito agradecidos com a sua colaboração. <br><br>
-        A mensagem na qual você nos enviou é essa: ${mensagem}. <br><br> Por Favor confira se está correto.`
+        html: `Obrigado Pela sugestão ${nomeCont}! <br> Agradecemos demais a sua colaboração. <br><br>
+        A mensagem que você nos enviou é essa: ${mensagem}. <br><br> Por Favor confira se está correto.<br><br> 
+        att.: Biza's Deck`
     };
       
     transporter.sendMail(mailOptions, function(error, info){
@@ -124,7 +124,7 @@ app.post('/addMensagem', function(req,res){
             res.redirect('/contact.html');
         }, 3000);
     }).catch(function(err){
-        console.log("Deu erro truta: " + err)
+        console.log("Deu erro: " + err)
     });
 })
 

@@ -15,15 +15,6 @@ function sairSite(){
 }
 
 
-function mostrar(){
-    cadastro1.style.display = "block"
-    formulario.style.display = "block"
-}
-var temp = setTimeout(mostrar, 1100)
-// final cadastro
-
-// inicio login
-
 function inicio(){
     logi.style.opacity = "0"
 }
@@ -33,11 +24,6 @@ function durante(){
 
 var ini = setTimeout(inicio, 0)
 var dur = setTimeout(durante, 1200)
-// function cad(){
-//     if (nome.value != '' && senha.value != ''){
-//         window.location.href = "/jogos"
-//     }
-// }
 
 var descer = setTimeout(carregar, 1500);
 
